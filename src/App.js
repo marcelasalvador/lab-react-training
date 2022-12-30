@@ -1,8 +1,10 @@
 import './App.css';
 import IdCard from "./components/IdCard"
 import Greetings from './components/Greetings';
+import RandomNumber from './components/RandomNumber';
+import BoxColor from './components/BoxColor';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <h3>Iteration1</h3>
@@ -30,13 +32,22 @@ function App() {
       <h3>Iteration2</h3>
       <Greetings lang="de">Ludwig</Greetings>
       <Greetings lang="fr">François</Greetings>
-
       <br/>
       <hr/>
-     
-  
 
       <h3>Iteration 3</h3>
+      <RandomNumber />
+      <br/>
+      <hr/>
+
+      <h3>Iteration 4 </h3>
+      <BoxColor/>
+      <br/>
+      <hr/>
+
+      <h3>Iteration 5 </h3>
+      <br/>
+      <hr/>
 
 
 

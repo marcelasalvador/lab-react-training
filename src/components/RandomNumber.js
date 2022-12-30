@@ -1,8 +1,5 @@
-import { useState } from "react"
 
-
-
-function RandomNumber(props) {
+function RandomNumber(pops) {
     function getRandomIntInclusive (min,max){
         min = Math.ceil(min);
         max = Math.floor(max);
@@ -10,16 +7,16 @@ function RandomNumber(props) {
     }
 
     let randomInt1 = getRandomIntInclusive (1,6)
-
+    let randomInt2 = getRandomIntInclusive (1,100)
 
     return (
         <div>
             <div>
-            
+                <p>Random value between 1 and 6 ={">"} {randomInt1} </p>  
             </div>
 
             <div>
-                
+                <p>Random value between 1 and 100 ={">"} {randomInt2} </p>
             </div>
         </div>
     )
